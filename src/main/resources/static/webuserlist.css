@@ -1,0 +1,34 @@
+#title {
+    margin: auto;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+#container {
+    text-align: center;
+}
+
+#maintable {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#maintable td, #maintable th {
+    padding: 5px;
+    text-align: center;
+    width:300px;
+    border: 1px solid black;
+}
+
+#add, #buttonAddUser, #dropdownDiv, #button {
+    width: 100%;
+}
+
+#grid {
+    height: 40px;
+}
