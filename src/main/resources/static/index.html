@@ -14,60 +14,77 @@
 
     <h2>Users and access</h2>
 
-    <table id="maintable" >
+    <table id="maintable">
         <tr>
             <th>User</th>
             <th>Role</th>
-
+            <th class="deleter">Edit</th>
         </tr>
         <tr>
             <td>Iga</td>
             <td>admin</td>
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
         </tr>
         <tr>
             <td>Jannik</td>
             <td>editor</td>
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
         </tr>
         <tr>
             <td>Jasmine</td>
-            <td>author</td>
+            <td>author
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
         </tr>
         <tr>
             <td>Naomi</td>
-            <td>contributor</td>
+            <td>contributor
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
         </tr>
         <tr>
             <td>Karolina</td>
-            <td>subscriber</td>
+            <td>subscriber
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
         </tr>
     </table>
 
-    <div id ="grid" class="fixed-grid has-4-cols">
-        <div class ="grid">
+    <div id="grid" class="fixed-grid has-4-cols">
+        <div class="grid">
             <div class="cell is-col-span-2">
-                <div id="newItemDiv" >
-                    <input id="newItem"  class="input" type="text" placeholder="ADD USER NAME"/>
+                <div id="input">
+                    <label>
+                        <input class="input" type="text" placeholder="ADD USER NAME"/>
+                    </label>
                 </div>
             </div>
             <div class="cell">
                 <div id="dropdownDiv" class="dropdown is-hoverable">
-                    <div id ="buttonAddUser" class="dropdown-trigger">
+                    <div id="buttonAddUser" class="dropdown-trigger">
                         <button id="button" class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <span>CHOOSE A ROLE</span>
                             <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
                         </button>
                     </div>
 
                     <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                        <div class="dropdown-content">
-                            <a href="#" class="dropdown-item"> admin </a>
+                        <a href="#" class="dropdown-item"> admin </a>
+                        <div id="dropdown-content" class="dropdown-content">
                             <a class="dropdown-item"> editor </a>
                             <a class="dropdown-item"> author </a>
                             <a class="dropdown-item"> contributor </a>
                             <a class="dropdown-item"> subscriber </a>
-                            <hr class="dropdown-divider" />
+                            <hr class="dropdown-divider"/>
                             <a href="#" class="dropdown-item"> other </a>
                         </div>
                     </div>
@@ -78,5 +95,57 @@
             </div>
         </div>
     </div>
+
+    <h3>Roles edit</h3>
+
+    <table id="rolestable">
+        <tr>
+            <th>Role</th>
+            <th class="deleter">Edit</th>
+        </tr>
+        <tr>
+            <td>admin</td>
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>editor</td>
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>author
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>contributor
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>subscriber
+            <td class="deleter">
+                <button class="delete"></button>
+            </td>
+        </tr>
+    </table>
+    <div id="grid-role" class="fixed-grid has-4-cols">
+        <div class="grid-role">
+            <div class="cell is-col-span-2">
+                <div id="newItemDiv">
+                    <input id="newItem" class="input" type="text" placeholder="ADD ROLE"/>
+                </div>
+            </div>
+            <div class="cell-role">
+                <button id="add" class="button is-dark">add</button>
+            </div>
+        </div>
+    </div>
+
 </div>
 </body>

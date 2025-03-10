@@ -12,6 +12,7 @@ h2 {
     text-align: center;
 }
 
+/* Table with users and their roles. */
 #maintable {
     width: 100%;
     margin-bottom: 50px;
@@ -21,14 +22,62 @@ h2 {
 #maintable td, #maintable th {
     padding: 5px;
     text-align: center;
-    width:300px;
     border: 1px solid black;
 }
 
-#add, #buttonAddUser, #dropdownDiv, #button {
+#maintable td, #maintable th {
+    width:48%;
+}
+
+/* Delete (user & role) button. */
+#maintable td.deleter, #maintable th.deleter {
+    min-width:50px;
+}
+
+td.deleter button {
+    width:10px;
+    border: none;
+}
+
+/* Adding a new user with role. */
+#add, #buttonAddUser, #dropdownDiv, #button, #dropdown-menu {
     width: 100%;
 }
 
 #grid {
     height: 40px;
+}
+
+a.dropdown-item {
+    background-color: black;
+    color: white;
+}
+
+/* Section with roles table. */
+h3 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#rolestable {
+    width: 50%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#rolestable td, #rolestable th {
+    width: 92%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Adding a new role. */
+#grid-role, #cell-role {
+    width: 50%
+}
+
+#rolestable th.deleter, #rolestable td.deleter {
+    min-width:50px;
 }
