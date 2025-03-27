@@ -26,21 +26,21 @@ h2 {
 }
 
 #maintable td, #maintable th {
-    width:48%;
+    width: 48%;
 }
 
 /* Delete (user & role) button. */
 #maintable td.deleter, #maintable th.deleter {
-    min-width:50px;
+    min-width: 50px;
 }
 
 td.deleter button {
-    width:10px;
+    width: 10px;
     border: none;
 }
 
 /* Adding a new user with role. */
-#add, #buttonAddUser, #dropdownDiv, #button, #dropdown-menu {
+#addUser, #buttonAddUser, #dropdownDiv, #button, #dropdown-menu {
     width: 100%;
 }
 
@@ -78,6 +78,10 @@ h3 {
     width: 50%
 }
 
+#addRole {
+    width: 100%;
+}
+
 #rolestable th.deleter, #rolestable td.deleter {
-    min-width:50px;
+    min-width: 50px;
 }

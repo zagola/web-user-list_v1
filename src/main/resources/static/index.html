@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bulmaswatch.min.css">
     <link rel="stylesheet" href="webuserlist.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="webuserlist.js"></script>
 </head>
 <body>
 <div id="container" class="container">
@@ -20,41 +21,6 @@
             <th>Role</th>
             <th class="deleter">Edit</th>
         </tr>
-        <tr>
-            <td>Iga</td>
-            <td>admin</td>
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>Jannik</td>
-            <td>editor</td>
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>Jasmine</td>
-            <td>author
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>Naomi</td>
-            <td>contributor
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>Karolina</td>
-            <td>subscriber
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
     </table>
 
     <div id="grid" class="fixed-grid has-4-cols">
@@ -62,7 +28,7 @@
             <div class="cell is-col-span-2">
                 <div id="input">
                     <label>
-                        <input class="input" type="text" placeholder="ADD USER NAME"/>
+                        <input class="input" type="text" placeholder="ADD USER NAME" id="userName"/>
                     </label>
                 </div>
             </div>
@@ -91,7 +57,7 @@
                 </div>
             </div>
             <div class="cell">
-                <button id="add" class="button is-dark">add</button>
+                <button id="addUser" class="button is-dark">add</button>
             </div>
         </div>
     </div>
@@ -103,46 +69,16 @@
             <th>Role</th>
             <th class="deleter">Edit</th>
         </tr>
-        <tr>
-            <td>admin</td>
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>editor</td>
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>author
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>contributor
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
-        <tr>
-            <td>subscriber
-            <td class="deleter">
-                <button class="delete"></button>
-            </td>
-        </tr>
     </table>
     <div id="grid-role" class="fixed-grid has-4-cols">
         <div class="grid-role">
             <div class="cell is-col-span-2">
                 <div id="newItemDiv">
-                    <input id="newItem" class="input" type="text" placeholder="ADD ROLE"/>
+                    <input id="roleName" class="input" type="text" placeholder="ADD ROLE"/>
                 </div>
             </div>
             <div class="cell-role">
-                <button id="add" class="button is-dark">add</button>
+                <button id="addRole" class="button is-dark">add</button>
             </div>
         </div>
     </div>
