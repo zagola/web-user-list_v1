@@ -40,7 +40,7 @@ td.deleter button {
 }
 
 /* Adding a new user with role. */
-#addUser, #buttonAddUser, #dropdownDiv, #button, #dropdown-menu {
+#addUser, #buttonAddUser, #dropdownDiv, #buttonAddRoleToUser, #roles_dropdown, button {
     width: 100%;
 }
 
@@ -49,8 +49,8 @@ td.deleter button {
 }
 
 a.dropdown-item {
-    background-color: black;
-    color: white;
+    background-color: lightgrey;
+    color: black;
 }
 
 /* Section with roles table. */
