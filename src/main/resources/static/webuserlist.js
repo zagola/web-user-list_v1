@@ -8,12 +8,17 @@ var add_user = function () {
                 "userName": newUser
             },
             "role": {
-                "roleName": newRole
+                "roleName": $("#buttonAddRoleToUser").html()
             }
         }),
         contentType: 'application/json; charset=utf-8'
     }).done(add_done_users);
     $("#userName").val("");
+}
+
+var add_role_to_user = function () {
+    let selected = $(this).html();
+    $("#buttonAddRoleToUser").html(selected);
 }
 
 var add_done_users = function () {
@@ -80,12 +85,15 @@ var fetch_users = function (data) {
 var fetch_roles = function (data) {
     console.log(data);
     $('#rolestable').html('<tr><th>Role</th><th class="deleter">Edit</th></tr><tr>')
+    $('#roles_dropdown').html('')
 
     for (i = 0; i < data.length; i++) {
         let roleId = data[i]["roleId"]
         let roleName = data[i]["roleName"]
         $('#rolestable').append(`<tr><td>${roleName}<td class="deleter"><button id="${roleId}" class="delete"></button></td></tr>`);
         $(`#${roleId}`).click(delete_role);
+        $('#roles_dropdown').append(`<a href="#" class="dropdown-item" id="drop_${roleId}">${roleName}</a>`);
+        $(`#drop_${roleId}`).click(add_role_to_user);
     }
 }
 
