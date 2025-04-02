@@ -18,3 +18,4 @@ $ mvn spring-boot:run
 ```
 
 ## Preview
+![](screenshot_01.png)
